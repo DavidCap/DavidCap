@@ -1,0 +1,25 @@
+{{define "blogShortDescrition"}}
+<!-- Blog -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="bolg-list-single" data-wow-delay="0.1s"> 
+                    <a target="view_window" href="/blog/index/{{.Id}}"><h2 class="bolg-list-single-title" > {{.Title}} </h2> </a> 
+                    <div>
+                        {{.Content}} 
+                    </div>
+                    <div class="blog-list">
+                        <div>{{.Updated}}</div>
+                        <!--<a class="blog-list-footer" target="view_window" href="/blog/index/{{.Id}}"> 阅读 {{.Views}} </a>
+                        <a class="blog-list-footer" target="view_window" href="/blog/index/{{.Id}}"> · 评论 {{.ReplyCount}}</a>
+                        <span class="blog-list-footer"> · 喜欢 {{.LikeCount}}</span>-->
+                    </div>
+                    <HR align=left width=80% color=#C9C9C9 SIZE=1 style="height: 1px;">  
+                </div>
+            </div>				
+        </div>
+    </div>
+</section>
+<!-- /.Blog -->
+{{end}}

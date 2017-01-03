@@ -1,0 +1,44 @@
+{{define "nav"}}
+<header id="header-banner">
+    <nav class="navbar navbar-default navbar-fixed-top fadeIn" role="navigation">
+        <div class="container">
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-box-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="#">DavidCap Home</a>
+                </div>
+            </div>
+            
+            <!-- Collect the nav links and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="dropdown-box-1">
+                
+                <ul class="nav navbar-nav">
+                    <li><a href="/#">Home</a></li>
+                    <li><a href="/category">Category</a></li>
+                    <li><a href="/aboutMe">About Me</a></li>
+                    <li><a {{if .IsLogin}} href="/addBlog" {{else}}href="/login"{{end}}>提笔写文</a></li>
+                    <!--<li class="dropdown" role="presentation">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            SERVICES <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu bullet fadeIn" role="menu">
+                            <li><a href="#first">FACILIS EXPEDITA</a></li>
+                            <li><a href="#second">FACILIS EXPEDITA</a></li>
+                            <li><a href="#third">FACILIS EXPEDITA</a></li>
+                        </ul>
+                    </li>-->
+                    <!--<li><a href="#">TESTIMONIALS</a></li>-->
+                    <!--<li><a href="#">CONTACT</a></li>-->
+                </ul>
+            </div>
+        </div> <!-- /.container -->
+    </nav> <!-- /.nav -->
+</header>
+{{end}}

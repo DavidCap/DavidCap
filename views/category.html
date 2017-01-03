@@ -1,0 +1,10 @@
+<section class="category">
+    <div class="category-blogs">
+        <!--Blog-->
+        {{if .Blogs}} 
+            {{range .Blogs}}
+                {{template "blogShortDescrition" .}}
+            {{end}}
+        {{end}}
+    </div>
+</section>
